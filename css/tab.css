@@ -1,0 +1,97 @@
+html { 
+    background: url(/images/background.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    
+}
+
+* { box-sizing: border-box; }
+
+
+
+/* STRUCTURE */
+
+.wrapper {
+	margin: auto;
+}
+
+header {
+	padding: 0 15px;
+}
+
+.columns {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+.column {
+	flex: 1;
+}
+
+.message { 
+    flex-basis:35%;
+}
+
+.message img {
+    width: 50%;
+}
+
+.columns .backup {
+    display: none;
+}
+
+.action{
+    flex-basis:65%;
+}
+
+footer {
+}
+
+
+@media screen and (max-width: 980px) {
+    .columns .message {
+    }
+
+    .columns .action{
+    }
+}
+
+@media screen and (max-width: 1px) {
+	.columns .message{
+        flex-basis:100%;
+        margin:auto;
+    }
+
+    .message > div{ 
+        display:none;
+    }
+
+    .message img{
+        margin:auto;
+        display:block;
+    }
+
+    .columns .action{
+        flex-basis:100%
+    }
+
+    .columns .backup{
+        display: flex;
+        flex-basis:100%;
+    }
+}
+
+.form_container {
+    width:100%;
+    margin:auto;
+}
+
+.form_background {
+    background: url(/images/martin.png);
+    background-repeat: no-repeat;
+    background-position: center; 
+}
