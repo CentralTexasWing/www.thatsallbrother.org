@@ -60,6 +60,16 @@ div img{
   .info {
       display:block;
   }
+
+  .info img.caf, 
+  .secondary-info img.caf {
+    width: 60%;
+    margin:auto;
+  }
+  div.text img{
+      float:left;
+      width:65%;
+  }
   .secondary-info{
       display:none;
   }
