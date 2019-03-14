@@ -1,6 +1,11 @@
 <html>
     <head>
-        <title>That's All Brother Return to Normandy</title>
+        <title>Inspire. Educate. Honor.  That's All, Brother</title>
+        <meta property="og:url"           content="https://donate.thatsallbrother.org" />
+        <meta property="og:type"          content="website" />
+        <meta property="og:title"         content="Inspire.  Educate.  Honor.  That's All, Brother" />
+        <meta property="og:description"   content="Donate today to become part of a team working to maintain a connection to the Greatest Generation" />
+        <meta property="og:image"         content="https://donate.thatsallbrother.org/images/tab_smoke.jpg" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" 
             type="image/png" 
@@ -8,6 +13,15 @@
 		<link rel="stylesheet" href="/css/tab.css" />
     </head>
     <body>
+        <!-- Load Facebook SDK for JavaScript -->
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
     <!--
         <div id="bbox-root"></div>
 
@@ -38,11 +52,22 @@
                 <img class="caf" src="/images/caflogo.png" />
             </div>
             
+            
         </div>
         <div class="col-6">
             <div class="form_container">
                 <div class="form_background">
                     <script type="text/javascript" src="https://cafcentex.formstack.com/forms/js.php/general_donations"></script><noscript><a href="https://cafcentex.formstack.com/forms/general_donations" title="Online Form">Online Form - TAB Donations</a></noscript>
+                </div>
+            </div>
+            <div style="width:60%;margin:auto;padding:10px">
+                <div class="fb-like" 
+                    data-href="https://donate.thatsallbrother.org" 
+                    data-layout="standard" 
+                    data-action="like" 
+                    data-size="large"
+                    data-share="true"
+                    data-show-faces="true">
                 </div>
             </div>
         </div>

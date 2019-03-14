@@ -16,7 +16,6 @@ div.clear {
 
 [class*="col-"] {
     width: 100%;
-    float: left;
     padding: 15px;
 }
 
@@ -29,11 +28,14 @@ img.caf{
 .social div{
     margin:auto;
     text-align: center;
+    font-family: Arial;
 }
 
 .backdrop {
     background-color: whitesmoke;
     padding:40px;
+    opacity:.85;
+    border-radius:8px;
 }
 
 .row::after {
