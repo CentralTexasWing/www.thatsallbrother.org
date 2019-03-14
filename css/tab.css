@@ -99,6 +99,6 @@ img.caf{
 
 .form_background {
     background: url(/images/martin.png);
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-position: center; 
 }
