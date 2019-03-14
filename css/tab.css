@@ -1,5 +1,5 @@
 html { 
-    background: url(/images/background.png) no-repeat center center fixed; 
+    background: url(/images/tab_smoke.jpg) no-repeat left center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -16,27 +16,28 @@ html {
     padding: 15px;
 }
 
+img.caf{
+    display:block;
+    width:60%;
+    margin: auto;
+}
+
 .row::after {
     content: "";
     clear: both;
     display: table;
 }
 
-div img{
-    display:block;
-    width:100%;
-}
-
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    .info{
+    .info.primary{ 
         display:none;
     }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-    .info{
+    .info.primary {
         display:none;
     }
 }
@@ -57,24 +58,12 @@ div img{
   .col-11 {width: 91.66%;}
   .col-12 {width: 100%;}
 
-  .info {
+  .info.primary {
       display:block;
   }
-
-  .info img.caf, 
-  .secondary-info img.caf {
-    width: 60%;
-    margin:auto;
-  }
-  div.text img{
-      float:left;
-      width:65%;
-  }
-  .secondary-info{
+  .info.secondary { 
       display:none;
-  }
-
-  
+  }  
 } 
 
 /* Large devices (laptops/desktops, 992px and up) */
